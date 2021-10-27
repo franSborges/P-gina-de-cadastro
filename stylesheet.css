@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f8eaea;
+    color: rgb(163, 159, 159);
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 26rem;
+    padding-right: 27rem;
+    
+
+    
+}
+
+main {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#ceb8b8;
+    border-radius: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1.8rem;
+
+
+
+}
+
+main h1 {
+    color: #e22c4a;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+
+main.Social {
+    display: flex;
+    align-content: center;
+}
+
+main .Social a {
+    text-decoration: none;
+}
+
+main .Social img {
+    width: 30px;
+    margin-left: 3rem;
+}
+
+main .Social a:first-child img {
+    margin-left: 0;
+}
+
+main .Ou {
+    margin-top: 1rem;
+}
+
+main .Ou span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #e05555;
+    position: relative;
+}
+
+main .Ou span::before,
+main .Ou span::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: #fdf7f74d;
+}
+
+main .Ou span::after {
+    left: 50px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    
+}
+main form input:hover {
+    background: #e22c4a;
+}
+main form input {
+    background: #d5d7dd;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166, 166, 166);
+    font-size: 1rem;
+    border: 1px solid #ceb8b8;
+    border-radius: 8px;
+}
+
+main form input[type="enviar"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 3rem;
+    border: none;
+    border-radius: 25px;
+    background: #e22c4a;
+    color: rgb(255, 255, 255);
+    font-display: center;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+
+main form input[type="enviar"]:hover {
+    background: #f5dae4;
+}
+
+
+@media only screen and (max-width: 450px) {
+    
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .Ou span {
+        font-size: 0.8rem;
+    }
+
+    main form label span,
+    main form input[type="enviar"] {
+        font-size: 1rem;
+    }
+}
